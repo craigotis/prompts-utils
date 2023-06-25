@@ -45,10 +45,10 @@ export const toggle: InputGetter<boolean> = async (
     ).value;
 };
 
-export const select: InputOptionsGetter<string> = async (
+export const select: InputOptionsGetter<number> = async (
     message: string,
     items: string[]
-): Promise<string> => {
+): Promise<number> => {
     return (await prompts({
         type: "select",
         name: "value",
