@@ -49,12 +49,10 @@ export const select: InputOptionsGetter<string> = async (
     message: string,
     items: string[]
 ): Promise<string> => {
-    const answer = (await prompts({
+    return (await prompts({
         type: "select",
         name: "value",
         message,
         choices: items.map(it => ({title: it}))
     })).value;
-    console.log('Picked:', answer)
-    return answer
 };

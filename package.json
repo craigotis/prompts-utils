@@ -1,6 +1,6 @@
 {
   "name": "prompts-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A thin later on top of prompts to provide easier/streamlined access to common operations.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
